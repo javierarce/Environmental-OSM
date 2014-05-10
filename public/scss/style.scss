@@ -180,11 +180,26 @@ strong { font-weight:bold; }
 
 .stories {
 
-  padding: 60px 0 20px 0; 
+  padding: 60px 0; 
   background-color: #BDC905;
 
   .inner { width: 780px; }
   h2 { color: #333; }
+
+  ul li {
+    @include inline-block();
+    width: 200px;
+    margin: 0 20px;
+  }
+
+  ul li a {
+    display: block;
+    background: #f1f1f1;
+    width: 200px;
+    margin: 0 0 20px 0;
+    height: 200px;
+    @include border-radius(400px);
+  }
 
 }
 
