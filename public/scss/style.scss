@@ -31,7 +31,7 @@ p {
 
   line-height: 120%;
 
-  a { 
+  a {
     border-bottom: 1px solid #f1f1f1;
 
     &:hover {
@@ -46,7 +46,7 @@ p {
 em     { font-style:italic; }
 strong { font-weight:bold; }
 
-.inner { 
+.inner {
   width: 941px;
   margin: auto;
 }
@@ -78,18 +78,18 @@ strong { font-weight:bold; }
     }
   }
 
-  p, a { 
-    font-size: 23px; 
+  p, a {
+    font-size: 23px;
     color: #fff;
   }
 
-  h2 { 
+  h2 {
     font-weight: 400;
     margin: 0 0 20px 0;
     font-size: 31px;
   }
 
-  p { 
+  p {
     width: 680px;
     font-weight: 300;
     margin: auto;
@@ -111,6 +111,10 @@ strong { font-weight:bold; }
     strong {
       display: block;
       margin: 0 0 5px 0;
+    }
+
+    img {
+      border: 1px solid #000
     }
 
     &.last {  margin-right: 0; }
@@ -169,7 +173,7 @@ strong { font-weight:bold; }
 
 .stories, .footer {
 
-  h2 { 
+  h2 {
     margin: 0 0 40px 0;
     color: #BDC905;
     font-weight: 300;
@@ -180,7 +184,7 @@ strong { font-weight:bold; }
 
 .stories {
 
-  padding: 60px 0; 
+  padding: 60px 0;
   background-color: #BDC905;
 
   .inner { width: 780px; }
@@ -202,7 +206,7 @@ strong { font-weight:bold; }
       text-transform: uppercase;
       font-weight: 400;
       margin: 0 0 7px 0;
-      
+
     }
 
     a {
@@ -231,7 +235,7 @@ strong { font-weight:bold; }
 
 .footer {
 
-  padding: 60px 0 20px 0; 
+  padding: 60px 0 20px 0;
   background: #333;
   color: #EDEDED;
 
@@ -245,7 +249,7 @@ strong { font-weight:bold; }
 
 }
 
-.footer .credits { 
+.footer .credits {
 
   margin: 80px 0 0 0;
   padding: 44px 0;
