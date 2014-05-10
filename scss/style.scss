@@ -72,13 +72,24 @@ strong { font-weight:bold; }
     margin: 0 17px 50px 0;
     @include inline-block();
 
+    font-size: 19px;
+    color: #333;
+
+    strong {
+      display: block;
+      margin: 0 0 5px 0;
+    }
+
     &.last {  margin-right: 0; }
   }
 
   ul li .map {
+    display:block;
     position:relative;
     width: 300px;
     height: 300px;
+    margin: 0 0 20px 0;
+
     background: #fff;
     @include border-radius(10px);
     border: 1px solid #CDCDCD;
@@ -131,6 +142,35 @@ strong { font-weight:bold; }
 }
 
 .footer .credits { 
+
+  margin: 80px 0 0 0;
   padding: 64px 0;
   background-color: #404040;
+
+    li {
+
+      @include inline-block();
+      margin:  0 45px;
+
+      a { display: block; }
+
+      &.openstreetmap a {
+        background: url(../img/logos/openstreetmap.png) no-repeat;
+        width: 211px;
+        height: 55px;
+      }
+
+      &.ecohack a {
+        background: url(../img/logos/ecohack.png) no-repeat;
+        width: 148px;
+        height: 114px;
+      }
+
+      &.protected-planet a {
+        background: url(../img/logos/protected_planet.png) no-repeat;
+        width: 212px;
+        height: 74px;
+      }
+
+    }
 }
