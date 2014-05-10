@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<gpx xmlns="http://www.topografix.com/GPX/1/1">
+<metadata>
+  <link href="https://github.com/hotosm/osm-tasking-manager">
+    <text>E-OSM Tasking Manager</text>
+  </link>
+  <time>2014-05-10T16:31:20.184392</time>
+</metadata>
+<trk>
+  <name>Task tile for job 1715</name>
+  <trkseg>
+      <trkpt lon="-100.374635696" lat="19.996063634"></trkpt>
+      <trkpt lon="-100.111473811" lat="19.996063634"></trkpt>
+      <trkpt lon="-100.111473811" lat="19.309633255"></trkpt>
+      <trkpt lon="-100.374635696" lat="19.309633255"></trkpt>
+      <trkpt lon="-100.374635696" lat="19.996063634"></trkpt>
+  </trkseg>
+</trk>
+</gpx>
