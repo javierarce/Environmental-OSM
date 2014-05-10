@@ -167,6 +167,27 @@ strong { font-weight:bold; }
 
 }
 
+.stories, .footer {
+
+  h2 { 
+    margin: 0 0 40px 0;
+    color: #BDC905;
+    font-weight: 300;
+    font-size:35px;
+  }
+
+}
+
+.stories {
+
+  padding: 60px 0 20px 0; 
+  background-color: #BDC905;
+
+  .inner { width: 780px; }
+  h2 { color: #333; }
+
+}
+
 .footer {
 
   padding: 60px 0 20px 0; 
@@ -176,12 +197,6 @@ strong { font-weight:bold; }
   font-size:19px;
 
   .inner { width: 780px; }
-
-  h2 { 
-    margin: 0 0 40px 0;
-    color: #DCFF72;
-    font-size:35px;
-  }
 
   p {
     margin: 0 0 24px 0;
