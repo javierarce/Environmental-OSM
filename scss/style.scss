@@ -126,7 +126,7 @@ strong { font-weight:bold; }
     background: #fff;
     background-repeat: no-repeat;
     background-position: center center;
-    @include border-radius(10px);
+    @include border-radius(7px);
     border: 1px solid #CDCDCD;
     clear:both;
     overflow:hidden;
@@ -152,7 +152,7 @@ strong { font-weight:bold; }
       color: #BDC905;
       background: #333;
       text-transform: uppercase;
-      @include border-radius(7px);
+      @include border-radius(5px);
 
       z-index: 100;
 
