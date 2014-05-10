@@ -189,8 +189,12 @@ strong { font-weight:bold; }
 
   ul li {
     @include inline-block();
+    vertical-align: top;
     width: 200px;
     margin: 0 20px;
+
+    p {
+    }
 
     strong {
       display:block;
