@@ -118,8 +118,20 @@ strong { font-weight:bold; }
     margin: 0 0 20px 0;
 
     background: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
     @include border-radius(10px);
     border: 1px solid #CDCDCD;
+    clear:both;
+    overflow:hidden;
+
+    img {
+      -webkit-transition: all 100ms ease-in-out;
+    }
+
+     &:hover img {
+       -webkit-transform: scale(1.2);
+     }
 
     a {
       display:block;
@@ -135,6 +147,8 @@ strong { font-weight:bold; }
       background: #333;
       text-transform: uppercase;
       @include border-radius(7px);
+
+      z-index: 100;
 
       &:hover {
         @include simple-transition(90ms);
