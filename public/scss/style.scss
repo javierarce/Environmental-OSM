@@ -2,7 +2,7 @@
 @import "compass/css3";
 @import "helpers";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 * {
   @include box-sizing(border-box);
@@ -62,19 +62,19 @@ strong { font-weight:bold; }
 
   .logo {
 
-    margin: 0 0 40px 0;
+    margin: 0 0 45px 0;
     line-height: 120%;
 
     h1 {
       font-size: 49px;
-      font-weight: 700;
+      font-weight: 400;
       margin: 0 0 17px 0;
     }
 
     h2 {
       font-size: 35px;
       color: #A3D800;
-      font-weight: 700;
+      font-weight: 400;
     }
   }
 
@@ -87,6 +87,12 @@ strong { font-weight:bold; }
     font-weight: 400;
     margin: 0 0 20px 0;
     font-size: 31px;
+  }
+
+  p { 
+    width: 680px;
+    font-weight: 300;
+    margin: auto;
   }
 
 }
@@ -118,8 +124,20 @@ strong { font-weight:bold; }
     margin: 0 0 20px 0;
 
     background: #fff;
-    @include border-radius(10px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include border-radius(7px);
     border: 1px solid #CDCDCD;
+    clear:both;
+    overflow:hidden;
+
+    img {
+      -webkit-transition: all 100ms ease-in-out;
+    }
+
+     &:hover img {
+       -webkit-transform: scale(1.2);
+     }
 
     a {
       display:block;
@@ -134,7 +152,9 @@ strong { font-weight:bold; }
       color: #BDC905;
       background: #333;
       text-transform: uppercase;
-      @include border-radius(7px);
+      @include border-radius(5px);
+
+      z-index: 100;
 
       &:hover {
         @include simple-transition(90ms);
@@ -143,6 +163,42 @@ strong { font-weight:bold; }
       }
 
     }
+  }
+
+}
+
+.stories, .footer {
+
+  h2 { 
+    margin: 0 0 40px 0;
+    color: #BDC905;
+    font-weight: 300;
+    font-size:35px;
+  }
+
+}
+
+.stories {
+
+  padding: 60px 0; 
+  background-color: #BDC905;
+
+  .inner { width: 780px; }
+  h2 { color: #333; }
+
+  ul li {
+    @include inline-block();
+    width: 200px;
+    margin: 0 20px;
+  }
+
+  ul li a {
+    display: block;
+    background: #f1f1f1;
+    width: 200px;
+    margin: 0 0 20px 0;
+    height: 200px;
+    @include border-radius(400px);
   }
 
 }
@@ -156,12 +212,6 @@ strong { font-weight:bold; }
   font-size:19px;
 
   .inner { width: 780px; }
-
-  h2 { 
-    margin: 0 0 40px 0;
-    color: #DCFF72;
-    font-size:35px;
-  }
 
   p {
     margin: 0 0 24px 0;
