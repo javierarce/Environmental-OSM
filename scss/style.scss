@@ -28,7 +28,19 @@ a {
 }
 
 p {
+
   line-height: 120%;
+
+  a { 
+    border-bottom: 1px solid #f1f1f1;
+
+    &:hover {
+      border-bottom: 1px solid #333;
+      color: #333;
+      @include simple-transition(15ms);
+    }
+  }
+
 }
 
 em     { font-style:italic; }
@@ -48,28 +60,40 @@ strong { font-weight:bold; }
 
   background: url(../img/background.png) center 15%;
 
+  .logo {
+
+    margin: 0 0 40px 0;
+    line-height: 120%;
+
+    h1 {
+      font-size: 49px;
+      font-weight: 700;
+      margin: 0 0 17px 0;
+    }
+
+    h2 {
+      font-size: 35px;
+      color: #A3D800;
+      font-weight: 700;
+    }
+  }
+
+  p, a { 
+    font-size: 23px; 
+    color: #fff;
+  }
+
   h2 { 
     font-weight: 400;
     margin: 0 0 20px 0;
     font-size: 31px;
-    font-family: Lato, "Helvetica Neue", "Helvetica", sans-serif;
-  }
-
-  p {
-    font-size: 23px;
-    font-family: Lato, "Helvetica Neue", "Helvetica", sans-serif;
   }
 
 }
 
 .content {
+
   margin: -68px 0 0 0;
-
-  .inner { }
-
-  ul {
-  
-  }
 
   ul li {
     margin: 0 17px 50px 0;
@@ -113,7 +137,7 @@ strong { font-weight:bold; }
       @include border-radius(7px);
 
       &:hover {
-        @include simple-transition(100ms);
+        @include simple-transition(90ms);
         background: #BDC905;
         color: #333;
       }
@@ -124,7 +148,8 @@ strong { font-weight:bold; }
 }
 
 .footer {
-  padding: 60px 0; 
+
+  padding: 60px 0 20px 0; 
   background: #333;
   color: #EDEDED;
 
@@ -147,33 +172,33 @@ strong { font-weight:bold; }
 .footer .credits { 
 
   margin: 80px 0 0 0;
-  padding: 64px 0;
+  padding: 44px 0;
   background-color: #404040;
 
-    li {
+  li {
 
-      @include inline-block();
-      margin:  0 45px;
+    @include inline-block();
+    margin:  0 45px;
 
-      a { display: block; }
+    a { display: block; }
 
-      &.openstreetmap a {
-        background: url(../img/logos/openstreetmap.png) no-repeat;
-        width: 211px;
-        height: 55px;
-      }
-
-      &.ecohack a {
-        background: url(../img/logos/ecohack.png) no-repeat;
-        width: 148px;
-        height: 114px;
-      }
-
-      &.protected-planet a {
-        background: url(../img/logos/protected_planet.png) no-repeat;
-        width: 212px;
-        height: 74px;
-      }
-
+    &.openstreetmap a {
+      background: url(../img/logos/openstreetmap.png) no-repeat;
+      width: 211px;
+      height: 55px;
     }
+
+    &.ecohack a {
+      background: url(../img/logos/ecohack.png) no-repeat;
+      width: 148px;
+      height: 114px;
+    }
+
+    &.protected-planet a {
+      background: url(../img/logos/protected_planet.png) no-repeat;
+      width: 212px;
+      height: 74px;
+    }
+
+  }
 }
