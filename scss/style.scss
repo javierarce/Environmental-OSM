@@ -2,7 +2,7 @@
 @import "compass/css3";
 @import "helpers";
 
-/*@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
 
 * {
   @include box-sizing(border-box);
@@ -14,7 +14,7 @@ body, html { width: 100%; height: 100%; margin: 0; padding: 0; }
 
 body {
   font-size: 15px;
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", sans-serif;
   color: #333;
   line-height: 120%;
 
@@ -27,5 +27,110 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 120%;
+}
+
 em     { font-style:italic; }
 strong { font-weight:bold; }
+
+.inner { 
+  width: 941px;
+  margin: auto;
+}
+
+.header {
+  padding: 56px 0 120px 0;
+  color: #fff;
+
+  background: url(../img/background.png) center 15%;
+
+  h2 { 
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    font-size: 31px;
+    font-family: Lato, "Helvetica Neue", "Helvetica", sans-serif;
+  }
+
+  p {
+    font-size: 23px;
+    font-family: Lato, "Helvetica Neue", "Helvetica", sans-serif;
+  }
+
+}
+
+.content {
+  margin: -68px 0 0 0;
+
+  .inner { }
+
+  ul {
+  
+  }
+
+  ul li {
+    margin: 0 17px 50px 0;
+    @include inline-block();
+
+    &.last {  margin-right: 0; }
+  }
+
+  ul li .map {
+    position:relative;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    @include border-radius(10px);
+    border: 1px solid #CDCDCD;
+
+    a {
+      display:block;
+      $width: 240px;
+      @include absolute-landscape-center($width);
+      position: absolute;
+      bottom: 17px;
+
+      font-weight: 700;
+
+      padding: 9px 0;
+      color: #BDC905;
+      background: #333;
+      text-transform: uppercase;
+      @include border-radius(7px);
+
+      &:hover {
+        @include simple-transition(100ms);
+        background: #BDC905;
+        color: #333;
+      }
+
+    }
+  }
+
+}
+
+.footer {
+  padding: 60px 0; 
+  background: #333;
+  color: #EDEDED;
+
+  font-size:19px;
+
+  .inner { width: 780px; }
+
+  h2 { 
+    margin: 0 0 40px 0;
+    color: #DCFF72;
+    font-size:35px;
+  }
+
+  p {
+    margin: 0 0 24px 0;
+  }
+
+}
+
+.footer .credits { 
+  padding: 64px 0;
+  background-color: #404040;
+}
