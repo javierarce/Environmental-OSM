@@ -5,8 +5,8 @@ Repo for the Environmental-OSM project for EcoHack 2014.
 
 [View project](http://javierarce.github.io/Environmental-OSM/)
 
-Working in this project
-=======================
+### Working in this project
+
 
 * This project uses ```compass``` to generate the CSS.
 * Here's how to install it:
